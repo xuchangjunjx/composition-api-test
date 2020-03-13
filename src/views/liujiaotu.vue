@@ -7,7 +7,7 @@
         v-for="(line,key) in lines"
         :key="key"
         class="line"
-        :style="`width:${line.width}px;background:${line.color};color:${line.color};transform: translate(350px, 198px) rotate(${line.deg}deg);`"
+        :style="`width:${line.width}px;background:${line.color};color:${line.color};transform: translate(750px, 198px) rotate(${line.deg}deg);`"
       >
         <span :style="`transform: rotate(${Math.abs(90-line.deg)}deg);`">{{line.name}}</span>
       </div>
@@ -84,7 +84,7 @@ export default {
   height: 0px;
   border-top: 1px dashed green;
   transform-origin: 250px 0%;
-  transform: translate(100px, 200px) rotate(90deg);
+  transform: translate(500px, 50px) rotate(90deg);
 }
 .line {
   display: inline-block;
